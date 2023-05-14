@@ -15,7 +15,7 @@ function exractData(filePath){
 
 export default function handler(req, res) {
     const filePath = bulidPath()
-    const { allEvents} = exractData(filePath)
+    const { events_categories ,allEvents} = exractData(filePath)
 
     if(!allEvents){
         res.status(404).json({
@@ -43,7 +43,7 @@ export default function handler(req, res) {
             }
             return ev
         })
-        fs.writeFileSync(filePath , JSON.stringify({allEvents : newAllEvents}))
+        fs.writeFileSync(filePath , JSON.stringify({ events_categories ,allEvents : newAllEvents}))
         res.status(200).json({ message: `You have been successfully registerd with email : ${email} for the event: ${eventId}` })
     }
 
