@@ -1,4 +1,8 @@
-import CatEvents from '../../../src/Components/Events/catEvents'
+import CatEvent from '../../../src/Components/Events/catEvent'
+
+const EventsCatPage = ({ data, pageName }) => <CatEvent data={data} pageName={pageName} />;
+
+export default EventsCatPage;
 
 export async function getStaticPaths() {
   const { events_categories } = await import('/data/data.json');
@@ -15,17 +19,12 @@ export async function getStaticPaths() {
   };
 }
 
-export async function getStaticProps(context){
-    const id = context.params.cat
-    const {allEvents} = await import ('/data/data.json')
-    const data = allEvents.filter(event => id === event.city)
-    return{
-        props:{data , pageName: id}
-    }
-}
+export async function getStaticProps(context) {
+  console.log(context);
+  const id = context?.params.cat;
+  const { allEvents } = await import('/data/data.json');
 
-export default function EventsCatPage({data , pageName}){
-    return(
-          <CatEvents data={data} pageName={pageName} />
-    )
+  const data = allEvents.filter((ev) => ev.city === id);
+
+  return { props: { data, pageName: id } };
 }
