@@ -7,7 +7,8 @@ const CatEvents = ({data , pageName}) => {
     <div className='cat-event-page'> 
       <h1 className='cat-title'>Events in {pageName}</h1>
        <div className='cat-content'>
-         {data.map(events => <Link className='cat-event-card' href={`/events/${events.city}/${events.id}`} passHref>
+         {data.map(events => <Link key={events.id}
+         className='cat-event-card' href={`/events/${events.city}/${events.id}`} passHref>
             <div>
             <Image 
               className='image'
