@@ -43,6 +43,7 @@ const SingleEvent = ({ data }) => {
         width={500}
         height={300}
       />
+      <div className='single-page-event-content-wraper'>
       <h1>{data.title}</h1>
       <p>{data.description}</p>
       <form onSubmit={onSubmit} className="email_registration">
@@ -53,9 +54,10 @@ const SingleEvent = ({ data }) => {
           id="email"
           placeholder="Please insert your email here"
         />
-        <button type="submit"> Submit</button>
+        <button className='button' type="submit"> Submit</button>
       </form>
       { message ?  <p className="message">{message}</p> : ''} 
+      </div>
     </div>
   )
 }

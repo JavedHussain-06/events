@@ -8,7 +8,9 @@ const Header = () => {
     <header>
       <div>
          <div className='topNav'>
-          <Image alt="logo" src={"/images/logo_black.png"} width={50} height={50} />
+          <Link passHref href='/'> 
+          <Image className='logo' alt="logo" src={"/images/logo_black.png"} width={50} height={50} />
+          </Link>
           <nav>
           <ul>
             <li>

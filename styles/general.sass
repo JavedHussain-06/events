@@ -4,7 +4,7 @@ header
     background: linear-gradient(302deg, #93efd3, transparent)
     >div
       width: 100%
-      max-width: 1250px
+      max-width: 78.125rem
       margin: auto
       display: flex
       flex-direction: column
@@ -27,7 +27,7 @@ ul
    font-weight: 600
 
 main
- min-height: 700px
+ min-height: 43.75rem
  display: flex
  justify-content: center
  align-items: center
@@ -105,11 +105,12 @@ main
          align-items: center      
 
 .event_single_page
+  padding: 1.25rem
   .email_registration
     margin-top: 1.5625rem
     label
       display: flex
-      margin-bottom: 15px
+      margin-bottom: 0.9375rem
       font-size: 0.9375rem
       font-weight: 800
       text-transform: uppercase
@@ -117,7 +118,7 @@ main
     input
       height: 2.5rem
       padding: 0.9375rem
-      min-width: 350px
+      min-width: 21.875rem
       box-shadow: none
       border-radius: 0.3125rem
       border: 0.0625rem solid #ccc
@@ -126,25 +127,27 @@ main
     button
       border-radius: 0.625rem
       height: 2.5rem
-      min-width: 150px
-      border: 0.0625rem solid #5f5a5a
+      min-width: 9.375rem
+      border: 0.0625rem solid #b7a9a9
       font-size: 1rem
       text-transform: uppercase
       margin-left: 0.9375rem
       font-weight: 600
-      background: #dcfff3
+      background: #92dec4
       cursor: pointer
+      color: #fff
+      text-shadow: 1px 1px 1px #857e7e
       &:hover
-        color: #dcfff3
+        color: #92dec4
         background: #333
 
 .message 
   background-color: #e6e6e6
   color: #333
-  padding: 10px
-  border: 1px solid #ccc
-  border-radius: 5px
-  margin-bottom: 10px
+  padding: 0.625rem
+  border: 0.0625rem solid #ccc
+  border-radius: 0.3125rem
+  margin-bottom: 0.625rem
 
 
 footer
@@ -166,45 +169,73 @@ footer
      flex-direction: column 
      gap: 2.1875rem
 
+@media (min-width: 769px)
+
+    header 
+     height: 15rem
+     padding-bottom : 2.5rem
+     >div
+       padding-bottom: 2.5rem
+       .title
+          margin-bottom: 0
+
 @media (max-width: 769px)
   header
    height: 20rem
 
 @media (max-width: 740px)
-
-  header
-    height: 22rem
-    >div
-    .title
-      width: 65%
-  .home-event-image
   
-  .about-us-list
+  header
+   .title
+     width: 75%
+
+  .event_single_page
+    display: flex
     flex-direction: column
-  main
-   padding: 3.125rem 0.625rem
-  .home_page
-    gap: 0.3124 
+    justify-content: center
+    align-items: center
+    header
+      height: 22rem
+      >div
+      .title
+        width: 65%
+    .home-event-image
+    
+    .single-page-event-content-wraper
+       max-width: 21.875rem
 
-  .card
-    flex-direction: column
-    gap: 10px  
-    &:nth-child(even)
-       direction: ltr   
+    .about-us-list
+      flex-direction: column
+    main
+    padding: 3.125rem 0.625rem
+    .home_page
+      gap: 0.3124 
 
-  .image_card
-    width: 50% 
-    overflow: hidden
+    .card
+      flex-direction: column
+      gap: 0.625rem
+      &:nth-child(even)
+        direction: ltr   
 
-  .single-image
-    width: 300px
-    height: 300px   
+    .image_card
+      width: 50% 
+      overflow: hidden
+
+    .single-image
+      width: 18.75rem
+      height: 18.75rem   
 
 
 @media (max-width: 560px)
+
   .home-event-image
-    height: 180px
+    height: 11.25rem
 
   .image_card
      width: 55%  
 
+@media (max-width: 495px)
+  
+   header
+     .title
+       width: 81%
