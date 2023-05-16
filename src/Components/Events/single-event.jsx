@@ -35,7 +35,7 @@ const SingleEvent = ({ data }) => {
   }
 
   return (
-    <div className='event_single_page'>
+    <div className='single_event_page'>
       <Image
         className='image single-image'
         alt={data.title}

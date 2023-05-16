@@ -17,7 +17,7 @@ export default function AboutUsPage(){
           voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
           cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </p>
-        <ul className="about-us-list">
+        <ul className="about_us_list">
           <li>
             <h3>Dlor in reprehenderit </h3>
             <p>
