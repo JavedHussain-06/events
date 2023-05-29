@@ -1,4 +1,6 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Events
+
+The Events App is a web application built with Next.js, a React framework, that displays upcoming events in a city. The project utilizes Next.js for server-side rendering, providing an efficient and seamless user experience. The styling of the app is done using SASS and CSS, allowing for easy customization and maintenance.
 
 ## Getting Started
 
@@ -11,10 +13,6 @@ yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-# Events App
-
-The Events App is a web application built with Next.js, a React framework, that displays upcoming events in a city. The project utilizes Next.js for server-side rendering, providing an efficient and seamless user experience. The styling of the app is done using SASS and CSS, allowing for easy customization and maintenance.
 
 ## Features
 
@@ -34,12 +32,23 @@ The Events App is a web application built with Next.js, a React framework, that 
 
 - SASS and CSS: Styles and layout are implemented using SASS and CSS, ensuring modularity and ease of maintenance.
 
+
+## Contributing
+
+    Contributions to the project are welcome! If you have any suggestions, bug reports, or    feature requests, please feel free to open an issue or submit a pull request.
+
+
+## License
+
+This project is licensed under the MIT License.
+
+
 ## Setup and Usage
 
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/events-app.git  
+git clone https://github.com/JavedHussain-06/events-app.git  
 
 ## Install dependencies:
 
@@ -49,11 +58,3 @@ git clone https://github.com/your-username/events-app.git
 ## Start the development server:
 
     npm run dev
-
-## Contributing
-
-    Contributions to the project are welcome! If you have any suggestions, bug reports, or    feature requests, please feel free to open an issue or submit a pull request.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
